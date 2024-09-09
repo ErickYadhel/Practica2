@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda Online</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .producto {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .producto img {
+        width: 200px;
+            max-width: 200px; /* Limita el ancho máximo */
+            height: auto; /* Mantiene la proporción de la imagen */
+            object-fit: cover;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+    }
+
+.producto img:hover {
+            transform: scale(1.05);
+        }
+        .producto h2 {
+            --s: 0.1em;   /* the thickness of the line */
+            --c: #2c4bff; /* the color */
+  
+            color: rgb(8, 134, 156);
+            padding-bottom: var(--s);
+           background: 
+           linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+           linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+           -webkit-background-clip: text,padding-box;
+           background-clip: text,padding-box;
+           transition: 0.5s;
+           text-align: center;
+           
+        }
+        .producto h2:hover {
+            --_p: 100%
+        }
+        .producto p {
+            text-align: center;
+        }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Tienda Infotep</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Producto.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="productos">
+        <article class="producto">
+            <img src="https://media.es.wired.com/photos/664bb5c610f4fbed4732c2d4/4:3/w_1424,h_1068,c_limit/Surface-Laptop-and-Surface-Pro-1900x1069.jpg" alt="Surface">
+            <h2>Microsoft Surface</h2>
+            <p>Microsoft Tablet Surface Pro 9 de 13 pulgadas, Core i7 de 12ª generación i7-1265U, deca-core (10 núcleos), 16 GB de RAM, SSD de 256 GB, Windows 11 Pro de 64 bits, platino</p>
+            <p class="precio">$1,047</p>
+            <button>Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://m.media-amazon.com/images/I/51qR5Al4jrL._AC_SL1500_.jpg" alt="Asus">
+            <h2>ASUS Portátil Vivobook 16</h2>
+            <p>ASUS Portátil Vivobook 16, pantalla FHD+ de 16 pulgadas (1920 x 1200), procesador Intel Core i7-1255U (10 Core), 16 GB de RAM, 1 TB SSD, cámara web, Wi-Fi+Bluetooth, HDMI, SSD portátil Skyerd, Win 11</p>
+            <p class="precio">$598</p>
+            <button>Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://m.media-amazon.com/images/I/51pGo9iJmEL._AC_SL1500_.jpg" alt="Lenovo">
+            <h2>Lenovo IdeaPad 1</h2>
+            <p>Lenovo IdeaPad 1 Laptop para estudiantes, procesador Intel de doble núcleo, 20 GB de RAM, SSD de 1 TB + 128 GB eMMC, pantalla FHD de 15.6 pulgadas, 1 año Office 365, Windows 11 Home, Wi-Fi 6, cámara</p>
+            <p class="precio">$389</p>
+            <button>Añadir al carrito</button>
+        </article>
+
+    <!-- Agregar todos los productos que usted desee, siguiendo la estructura anterior-->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online</p>
+    </footer>
+</body>
+</html>
