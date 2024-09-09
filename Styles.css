@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ff0000;
+    color: #fcf5f5;
     padding: 10px;
     text-align: center;
 }
@@ -23,7 +23,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .productos {
@@ -45,7 +45,7 @@ nav a {
 }
 
 footer {
-    background-color: #333;
+    background-color: #ff0000;
     color: #fff;
     text-align: center;
     padding: 10px;
